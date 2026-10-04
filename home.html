@@ -8,10 +8,22 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <style>
+    
     body {
-      background-color: #020003; color: #ffffff;
+      background-color: #020003;
+      color: #ffffff;
     }
+    .profile-card {
+      background-color: #000000;
+      border: 1px solid #000000;
+      color: #ffffff;
+    }
+    .profile-card img {
+      border-radius: 8px;
+    }
+
   </style>
+  <!-- i tried to add a gif as background was just to much going on -->
   <title>Stephen Zapata</title>
 </head>
 <body>
@@ -21,6 +33,7 @@
     <p style="text-align: center;"> Welcome to my portfolio website! Here you will find information about my projects, skills, and experience. </p> 
     <p style="text-align: center;">Feel free to explore and learn more about me. </p> 
     
+    <!--Facts about me and what i have done update when necessary -->
     <div class="row">
       <div class="col-md-4">
      <h3> About Me</h3>
@@ -32,15 +45,19 @@
      </ul>
     </div>
 
-    <div class="card" style="width:400px">
-  <img class="card-img-top" src="images/20241121_164954.jpg" alt="Stephen Zapata">
-  <div class="card-body">
-    <h4 class="card-title">Stephen Zapata</h4>
-    <h5 class="card-title">Age: 30</h5>
-    <p class="card-text">Current student at Metroplitan State University of Denver, pursuing a degree in Computer Science.</p>
-    <img src="images/20240616_093421(0).jpg" alt="out fishing" style="width:100%">
-    <img src="images/74617655_2130433727057012_8803172270773108736_n.jpg" alt="promotion" style="width:100%">
-    
+    <!-- this part gave me trouble as i couldn't get the layout right -->
+    <div class="col-md-4">
+        <div class="profile-card" style="width:400px"">
+        <img class="card-img-top" src="images/20241121_164954.jpg" alt="Stephen Zapata">
+        <div class="card-body">
+         <h4 class="card-title">Stephen Zapata</h4>
+         <h5 class="card-title">Age: 30</h5>
+         <p class="card-text">Current student at Metroplitan State University of Denver, pursuing a degree in Computer Science.</p>
+         <!-- more images of me through some of my life maybe ill add more -->
+         <img src="images/20240616_093421(0).jpg" alt="out fishing" style="width:100%">
+         <img src="images/74617655_2130433727057012_8803172270773108736_n.jpg" alt="promotion" style="width:100%">
+        </div>
+    </div>    
 </div>
    </div>
 <script>
